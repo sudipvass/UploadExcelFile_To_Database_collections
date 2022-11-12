@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Node js upload/Import excel file to Mongodb database - Tutsmake.com</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <script src="https://unpkg.com/read-excel-file@5.x/bundle/read-excel-file.min.js"></script> -->
+
+    </head>
+    <body>
+      <h1> Upload Your Excel File to Database </h1>
+      <form action="/uploadfiles" enctype="multipart/form-data" method="post">
+        <input type="file" name="uploadfile" id="inputfile" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" >
+        <input type="submit"  id="upld" value="Upload Excel">
+      </form>  
+    </body>
+    <!-- <script>
+      var input = document.getElementById('inputfile')
+      input.addEventListener('change', function() {
+        readXlsxFile(input.files[0]).then(function(rows) {
+          // `rows` is an array of rows
+          // each row being an array of cells.
+        })
+      })
+    </script> -->
+</html>
